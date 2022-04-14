@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kty
+  name: edq
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "kty"
+  - name: "edq"
     port: 8080
   selector:
-    app: kty
+    app: edq
