@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: www
+  name: qqq
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: www
+      app: qqq
   template:
     metadata:
       labels:
-        app: www
+        app: qqq
     spec:
       containers:
-      - image: okteto.dev/www:latest
-        name: www
+      - image: okteto.dev/qqq:latest
+        name: qqq
         ports:
         - containerPort: 8080
         env:
