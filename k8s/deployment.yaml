@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kty
+  name: edq
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kty
+      app: edq
   template:
     metadata:
       labels:
-        app: kty
+        app: edq
     spec:
       containers:
-      - image: okteto.dev/kty:latest
-        name: kty
+      - image: okteto.dev/edq:latest
+        name: edq
         ports:
         - containerPort: 8080
         env:
