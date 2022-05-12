@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: odd
+  name: qqq
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: odd
+      app: qqq
   template:
     metadata:
       labels:
-        app: odd
+        app: qqq
     spec:
       containers:
-      - image: okteto.dev/odd:latest
-        name: odd
+      - image: okteto.dev/qqq:latest
+        name: qqq
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "0291cdf7-4772-44e3-8f8b-5b6b2612c698"
+          value: "87274cf1-48ad-4363-8618-195aee6023e2"
         - name: Vless_Path
           value: "/s233"
         - name: Vmess_UUID
-          value: "0291cdf7-4772-44e3-8f8b-5b6b2612c698"
+          value: "87274cf1-48ad-4363-8618-195aee6023e2"
         - name: Vmess_Path
           value: "/s244"
         - name: Share_Path
