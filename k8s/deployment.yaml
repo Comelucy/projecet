@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uuu
+  name: kay
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: uuu
+      app: kay
   template:
     metadata:
       labels:
-        app: uuu
+        app: kay
     spec:
       containers:
-      - image: okteto.dev/uuu:latest
-        name: uuu
+      - image: okteto.dev/kay:latest
+        name: kay
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "261e1b45-a867-4509-9297-14f6361b1cd6"
+          value: "a0d7ac1d-a5e6-45fa-b86d-1590b5c889f8"
         - name: Vless_Path
           value: "/s233"
         - name: Vmess_UUID
-          value: "261e1b45-a867-4509-9297-14f6361b1cd6"
+          value: "a0d7ac1d-a5e6-45fa-b86d-1590b5c889f8"
         - name: Vmess_Path
           value: "/s244"
         - name: Share_Path
