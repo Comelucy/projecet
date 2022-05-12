@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: uuu
+  name: kay
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "uuu"
+  - name: "kay"
     port: 8080
   selector:
-    app: uuu
+    app: kay
