@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vvv
+  name: ere
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vvv
+      app: ere
   template:
     metadata:
       labels:
-        app: vvv
+        app: ere
     spec:
       containers:
-      - image: okteto.dev/vvv:latest
-        name: vvv
+      - image: okteto.dev/ere:latest
+        name: ere
         ports:
         - containerPort: 8080
         env:
