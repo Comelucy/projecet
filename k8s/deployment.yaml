@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fc
+  name: rt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fc
+      app: rt
   template:
     metadata:
       labels:
-        app: fc
+        app: rt
     spec:
       containers:
-      - image: okteto.dev/fc:latest
-        name: fc
+      - image: okteto.dev/rt:latest
+        name: rt
         ports:
         - containerPort: 8080
         env:
