@@ -10,7 +10,7 @@
 
     "Vless_UUID": {
       "description": "Vless uuid（http://www.uuid.online/在线生成）",
-      "value": "6fc34fbf-7222-4ce9-b715-93a27c7a2a97"
+      "value": "56e983a1-5c57-4348-a8f7-755b96337520"
     },
 
     "Vless_Path": {
@@ -19,7 +19,7 @@
     },
     "Vmess_UUID": {
       "description": "Vmess uuid（http://www.uuid.online/在线生成）",
-      "value": "6fc34fbf-7222-4ce9-b715-93a27c7a2a97"
+      "value": "56e983a1-5c57-4348-a8f7-755b96337520"
     },
 
     "Vmess_Path": {
