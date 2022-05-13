@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kpl
+  name: ben
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kpl
+      app: ben
   template:
     metadata:
       labels:
-        app: kpl
+        app: ben
     spec:
       containers:
-      - image: okteto.dev/kpl:latest
-        name: kpl
+      - image: okteto.dev/ben:latest
+        name: ben
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "13408fc1-8e6e-49c3-8e21-1a64ec5aaf75"
+          value: "62108fd8-4566-40a9-b93a-bd6d9fb4f161"
         - name: Vless_Path
           value: "/s233"
         - name: Vmess_UUID
-          value: "13408fc1-8e6e-49c3-8e21-1a64ec5aaf75"
+          value: "62108fd8-4566-40a9-b93a-bd6d9fb4f161"
         - name: Vmess_Path
           value: "/s244"
         - name: Share_Path
