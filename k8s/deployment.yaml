@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yuy
+  name: ccc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yuy
+      app: ccc
   template:
     metadata:
       labels:
-        app: yuy
+        app: ccc
     spec:
       containers:
-      - image: okteto.dev/yuy:latest
-        name: yuy
+      - image: okteto.dev/ccc:latest
+        name: ccc
         ports:
         - containerPort: 8080
         env:
