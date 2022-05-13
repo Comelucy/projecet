@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vvv
+  name: ere
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "vvv"
+  - name: "ere"
     port: 8080
   selector:
-    app: vvv
+    app: ere
