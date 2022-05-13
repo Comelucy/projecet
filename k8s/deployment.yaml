@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ere
+  name: qwq
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ere
+      app: qwq
   template:
     metadata:
       labels:
-        app: ere
+        app: qwq
     spec:
       containers:
-      - image: okteto.dev/ere:latest
-        name: ere
+      - image: okteto.dev/qwq:latest
+        name: qwq
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "62108fd8-4566-40a9-b93a-bd6d9fb4f161"
+          value: "2fa0382d-3a2b-4df5-b53d-f707e56fc423"
         - name: Vless_Path
           value: "/s233"
         - name: Vmess_UUID
-          value: "62108fd8-4566-40a9-b93a-bd6d9fb4f161"
+          value: "2fa0382d-3a2b-4df5-b53d-f707e56fc423"
         - name: Vmess_Path
           value: "/s244"
         - name: Share_Path
