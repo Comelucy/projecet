@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eee
+  name: kpl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eee
+      app: kpl
   template:
     metadata:
       labels:
-        app: eee
+        app: kpl
     spec:
       containers:
-      - image: okteto.dev/eee:latest
-        name: eee
+      - image: okteto.dev/kpl:latest
+        name: kpl
         ports:
         - containerPort: 8080
         env:
