@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dhf
+  name: hhh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dhf
+      app: hhh
   template:
     metadata:
       labels:
-        app: dhf
+        app: hhh
     spec:
       containers:
-      - image: okteto.dev/dhf:latest
-        name: dhf
+      - image: okteto.dev/hhh:latest
+        name: hhh
         ports:
         - containerPort: 8080
         env:
